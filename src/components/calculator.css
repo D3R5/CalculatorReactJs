@@ -1,0 +1,52 @@
+*{
+    background-color: rgb(235, 222, 222);
+}
+
+.calculatorContainer {
+    width: 450px;
+    margin: 100px auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ".  . . ."
+    ;
+}
+
+.calculatorButton{
+    border-radius: 200px;
+    padding: 20px;
+    font-size: 30px;
+    border: solid 1px rgb(235, 222, 222);
+    background-color: #1b344e;
+    color: #e0e0cb;
+    cursor: pointer;
+}
+
+.calculatorButton:hover{
+    background-color: #3f6286;
+}
+
+.calculatorScreen{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.calculatorScreenWords {
+    font-family: sans-serif;
+}
+
+.calculatorCurrentValue{
+    font-family: sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
